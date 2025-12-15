@@ -11,8 +11,8 @@ import {
   defaultHighlightStyle,
 } from '@codemirror/language';
 import { useAuth } from '../../context/auth';
-import { saveCode } from '../../firebase/saveCode';
-import { getCode } from '../../firebase/getCode';
+import { saveCode } from '../lib/firebase/saveCode';
+import { getCode } from '../lib/firebase/getCode';
 
 const customLineNumberTheme = EditorView.theme({
   '.cm-lineNumbers': {
