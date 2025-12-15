@@ -5,8 +5,8 @@ import Header from '@/componets/hedder';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useAuth } from '../../../context/auth';
-import { getEvent } from '../../../firebase/getEvent';
-import { checkParticipantsExists } from '../../../firebase/checkParticipantsExists';
+import { getEvent } from '../../lib/firebase/getEvent';
+import { checkParticipantsExists } from '../../lib/firebase/checkParticipantsExists';
 
 export default function Home() {
   const router = useRouter();

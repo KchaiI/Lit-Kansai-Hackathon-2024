@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { getEvent } from '../../firebase/getEvent';
+import { getEvent } from '../lib/firebase/getEvent';
 import LeftButton from '../assets/images/leftbutton.svg';
 import RightButton from '../assets/images/rightbutton.svg';
 

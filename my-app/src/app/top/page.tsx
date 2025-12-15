@@ -5,12 +5,12 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { logout } from '../../lib/auth';
 import { useAuth } from '../../../context/auth';
-import { getEvent } from '../../../firebase/getEvent';
-import { checkParticipantsExists } from '../../../firebase/checkParticipantsExists';
+import { getEvent } from '../../lib/firebase/getEvent';
+import { checkParticipantsExists } from '../../lib/firebase/checkParticipantsExists';
 import Dashboard from '@/componets/Dashboard';
 import CardList from '@/componets/cardlist';
 import ArchiveCardList from '@/componets/ArchiveCardList';
-import { addGroup } from '../../../firebase/addGroup';
+import { addGroup } from '../../lib/firebase/addGroup';
 
 export default function Home() {
   const [waiting, setWaiting] = useState(false);

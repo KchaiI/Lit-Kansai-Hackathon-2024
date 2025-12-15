@@ -3,7 +3,7 @@
 import { onAuthStateChanged } from '@firebase/auth';
 import { doc, getDoc, setDoc } from '@firebase/firestore';
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
-import { auth, db } from '../firebase/client';
+import { auth, db } from '../src/lib/firebase/client';
 import { User } from '../types/user';
 
 //コンテクスト用の方を定義
